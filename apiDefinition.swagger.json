@@ -1,0 +1,49 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "{ title of connector }",
+    "description": "{ description of connector }",
+    "version": "1.0.0",
+    "contact": {
+      "name": "{ name of contact person or team }",
+      "url": "{ URL of contact person or team }",
+      "email": "{ email of contact person or team }"
+    }
+  },
+  "x-ms-connector-metadata": [
+    {
+      "propertyName": "Website",
+      "propertyValue": "{ website of the connector }"
+    },
+    {
+      "propertyName": "Privacy policy",
+      "propertyValue": "{ privacy policy URL of the connector }"
+    },
+    {
+      "propertyName": "Categories",
+      "propertyValue": "IT Operations"
+    }
+  ],
+  "host": "{ host of the mcp server, e.g. 'learn.microsoft.com' }",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/api/mcp": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Immediate Response"
+          }
+        },
+        "x-ms-agentic-protocol": "mcp-streamable-1.0",
+        "operationId": "InvokeServer",
+        "summary": "{ description of mcp server }",
+        "description": "{ description of mcp server }"
+      }
+    }
+  },
+  "securityDefinitions": {},
+  "security": []
+}

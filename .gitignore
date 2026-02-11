@@ -1,0 +1,5 @@
+
+
+#Ignore vscode AI rules
+.codacy/codacy.yaml
+.github/instructions/codacy.instructions.md

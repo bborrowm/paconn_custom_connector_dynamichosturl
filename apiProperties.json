@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "connectionParameters": {
+      "hostname": {
+        "type": "string",
+        "uiDefinition": {
+          "displayName": "host name",
+          "description": "The host name of the mcp server, e.g. 'learn.microsoft.com'",
+          "tooltip": "Enter the host name of the mcp server, e.g. 'learn.microsoft.com'",
+          "constraints": {
+            "required": "true"
+          }
+        }
+      }
+    },
+    "iconBrandColor": "#007ee5",
+    "capabilities": [],
+    "policyTemplateInstances": [
+      {
+        "templateId": "dynamichosturl",
+        "title": "sethosturl",
+        "parameters": {
+          "x-ms-apimTemplateParameter.urlTemplate": "https://@connectionParameters('hostname')"
+        }
+      }
+    ],
+    "publisher": "{ publisher name }"
+  }
+}
