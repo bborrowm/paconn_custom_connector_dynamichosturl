@@ -30,7 +30,7 @@
     "https"
   ],
   "paths": {
-    "/api/mcp": {
+    "{ path to mcp end point e.g. '/api/mcp', '/mcp', etc.}": {
       "post": {
         "responses": {
           "200": {
